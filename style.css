@@ -5,8 +5,10 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-  background-color: rgb(236, 234, 234);
+
+body{
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -36,16 +38,15 @@ ul {
 }
 
 button {
-  width: 100px;
+  width: 90px;
   height: 40px;
-  padding: 10px;
   color: white;
   background-color: rgb(8, 181, 8);
   border: none;
   border-radius: 5px;
   text-align: center;
-  margin-top: 10px;
   transition: all 0.5s ease-out;
+  font-size: 16px;
 }
 
 button:hover {
@@ -71,19 +72,29 @@ li {
 li a {
   text-decoration: none;
   color: black;
+  transition: color  0.5s;
+
 }
+
+li a:hover {
+  color: rgb(8, 181, 8);
+}
+
+
 
 .sect1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 100px;
-  height: 70vh;
-  position: relative;
+  padding: 0px 150px;
+  position: relative;  
+  background-color: rgb(128,128,128, 0.1);
+  height: 80vh;
+
 }
 
 .sect1 h1 {
-  font-size: 80px;
+  font-size: 70px;
 }
 
 .second {
@@ -93,18 +104,20 @@ li a {
 
 .text p {
   color: grey;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 5px;
 }
 
 .btn2{
     margin-top: 25px;
-    /* height: 45px; */
+    height: 55px;
+    width: 130px;
+    font-size: 17px;
 }
 
 .dots {
     position: absolute;
-    bottom: 0;
+    bottom: 2%;
     right: 50%;
     display: flex;
     gap: 5px;
@@ -122,4 +135,221 @@ background-color: rgb(157, 238, 157);
     cursor: pointer;
 }
 
+.sect2{
+  display: flex;
+align-items: center;
+  flex-direction: column;
+  height: 75vh;
+}
 
+.sect2 h2{
+  text-align: center;
+  margin-top: 45px;
+  font-size: 35px;
+  line-height: 40px;
+  width: 35%;
+  color: rgb(88, 88, 88);
+}
+
+.sect2 p{
+  color: gray;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.cards {
+  width: 80%;
+  height: 50%;
+  margin-top: 30px;
+  display: flex;
+  gap: 30PX;
+  position: relative;
+
+
+}
+
+
+.shadow {
+  width: 20%;
+  height: 90%;
+  border-radius: 10px;
+margin-top: 10px;
+  background-color: white;
+  box-shadow: -2px 0px rgba(186, 180, 180, 0.2);
+  position: absolute;
+  left: -1%;
+  top: 3%;
+  z-index: -1;
+}
+.card{
+  width: 25%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow:-2px 02px rgba(186, 180, 180, 0.2), 2px -2px rgba(186, 180, 180, 0.2) ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px 20px;
+}
+
+.association{
+  padding: 0px 23px;
+}
+
+.sect2 h1{
+text-align: center;
+font-size: 30px;
+width: 70%;
+}
+
+
+.sect2 p{
+  text-align: center;
+  font-size: 16px;
+}
+
+
+
+.clients{
+  width: 40%;
+  height: 100%;
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.clients h1{
+  font-size: 40px;
+}
+
+.clients p{
+  font-size: 18px;
+}
+
+.sect3{
+  margin-top: -35px;
+  width: 96%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 150px;
+ 
+}
+
+.sect4{
+  height: 80vh;
+padding: 100px 0; 
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.text2{
+  width: 50%;
+}
+
+.text2 h1{
+  width: 79%;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(88, 88, 88);
+}
+
+.text2 p{
+  margin-top: 15px;
+  width: 83%;
+}
+
+.text2 button{
+  margin-top: 25px;
+  width: 135px;
+  height: 48px;
+}
+
+.sect5{
+  height: 40vh;
+  background-color: rgb(128,128,128, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.vision {
+ width: 50%;
+}
+
+.vision h2{
+  font-size: 38px;
+  font-weight: 500;
+  width: 51%;
+}
+
+.vision p{
+  margin-top: 8px;
+  font-size: 16.5px;
+}
+
+.green {
+  color: rgb(8, 181, 8);
+}
+
+.records{
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-margin{
+  margin-left: 90px;
+}
+
+.bottom-margin{
+  margin-bottom: 40px;
+}
+
+.record {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.record img{
+  width: 40px;
+  height: 40px;
+}
+
+.record h3{
+  color: rgb(88, 88, 88);
+  font-size: 30px;
+}
+
+.record P{
+  color: gray;
+}
+
+.sect6{
+  height: 50vh;
+  background-color: rgb(128,128,128,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 100px;
+}
+
+.sect6 img{
+  height: 90%;
+}
+
+.text3 p{
+}
+
+.sect7{
+  height: 75vh;
+}
